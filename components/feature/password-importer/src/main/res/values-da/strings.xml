@@ -8,9 +8,9 @@
 
 <resources>
   <!-- Title for the passwords import loading dialog. -->
-  <string name="mozac_feature_passwords_importer_dialog_title">هونی رزما ن و من ایاره</string>
+  <string name="mozac_feature_passwords_importer_dialog_title">Importerer adgangskoder</string>
   <!-- Description for the passwords import loading dialog. -->
-  <string name="mozac_feature_passwords_importer_dialog_description">ای بلگه ن بؽلین واز بمئنه. تینا چن سانیه تۊل اکشه.</string>
+  <string name="mozac_feature_passwords_importer_dialog_description">Hold denne skærm åben. Det burde kun tage et par sekunder.</string>
   <!-- Label for the cancel action on the passwords import loading dialog. -->
-  <string name="mozac_feature_passwords_importer_dialog_cancel">لقو</string>
+  <string name="mozac_feature_passwords_importer_dialog_cancel">Annuller</string>
 </resources>

@@ -8,44 +8,47 @@
 
 <resources>
   <!-- Title shown in the protection dashboard indicating the user is protected -->
-  <string name="mozac_protections_dashboard_youre_protected">您已受保护</string>
+  <string name="mozac_protections_dashboard_youre_protected">Du er beskyttet</string>
   <plurals name="mozac_protections_dashboard_trackers_blocked_this_week">
     <!--
       Label shown below the tracker count in the dashboard. The count is displayed separately
       above this string and is used to select the correct plural form. Do not include the number in
       the translation.
     -->
-    <item quantity="other">本周拦截跟踪器数量</item>
+    <item quantity="one">Forsøg på sporing blokeret denne uge</item>
+    <item quantity="other">Forsøg på sporing blokeret denne uge</item>
   </plurals>
   <plurals name="mozac_protections_dashboard_data_saved">
     <!-- Label showing data saved in megabytes. %1$d is the number of MB saved -->
-    <item quantity="other">已节省流量 %1$d MB</item>
+    <item quantity="one">%1$d MB sparet</item>
+    <item quantity="other">%1$d MB sparet</item>
   </plurals>
   <!-- Section header for tracker category breakdown -->
-  <string name="protections_dashboard_where_they_came_from">来源分类</string>
+  <string name="protections_dashboard_where_they_came_from">Hvor de kom fra</string>
   <!-- Tracker category: Advertising trackers -->
-  <string name="protections_dashboard_category_ads">广告</string>
+  <string name="protections_dashboard_category_ads">Reklamer</string>
   <!-- Tracker category: Analytics trackers -->
-  <string name="protections_dashboard_category_analytics">分析</string>
+  <string name="protections_dashboard_category_analytics">Analyse</string>
   <!-- Tracker category: Social media trackers -->
-  <string name="protections_dashboard_category_social">社交媒体</string>
+  <string name="protections_dashboard_category_social">Social</string>
   <!-- Tracker category: Other trackers -->
-  <string name="protections_dashboard_category_others">其他</string>
+  <string name="protections_dashboard_category_others">Andet</string>
   <!-- Title shown in the protection dashboard header next to the shield icon -->
-  <string name="mozac_protections_dashboard_trackers_blocked_this_week_title">本周拦截跟踪器数量</string>
+  <string name="mozac_protections_dashboard_trackers_blocked_this_week_title">Forsøg på sporing blokeret i denne uge</string>
   <!--
     Title shown when no trackers have been blocked yet
     %1$s will be replaced by the app name (e.g. Firefox Focus)
   -->
-  <string name="mozac_protections_dashboard_empty_title">%1$s 会在您浏览时拦截跟踪器。</string>
+  <string name="mozac_protections_dashboard_empty_title">%1$s blokerer sporings-mekanismer, mens du browser.</string>
   <!-- Subtitle shown when no trackers have been blocked yet -->
-  <string name="mozac_protections_dashboard_empty_subtitle">拦截情况将显示在这里。</string>
+  <string name="mozac_protections_dashboard_empty_subtitle">Du kan se dem her.</string>
   <plurals name="mozac_protections_dashboard_trackers_count">
     <!--
       Label used for the number of trackers blocked.
       %1$d is the number of trackers.
     -->
-    <item quantity="other">%1$d 个跟踪器</item>
+    <item quantity="one">%1$d sporings-mekanisme</item>
+    <item quantity="other">%1$d sporings-mekanismer</item>
   </plurals>
   <plurals name="mozac_protections_dashboard_total_blocked_since">
     <!--
@@ -53,6 +56,7 @@
       since a specific date. %1$s is the trackers count phrase (e.g.
       "5,305 trackers"). %2$s is the formatted date (e.g. "February 23, 2026").
     -->
-    <item quantity="other">自%2$s以来，已拦截%1$s个跟踪器</item>
+    <item quantity="one">%1$s blokeret siden %2$s</item>
+    <item quantity="other">%1$s blokeret siden %2$s</item>
   </plurals>
 </resources>
