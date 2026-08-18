@@ -5,7 +5,7 @@
 // Prevents gradle builds from looking for a root settings.gradle
 pluginManagement {
     if (!gradle.root.hasProperty("mozconfig")){
-        apply from: file('../../../gradle/mozconfig.gradle')
+        apply from: file(new File(System.getProperty("user.dir"), "gradle/mozconfig.gradle"))
     } else {
         gradle.ext.mozconfig = gradle.root.mozconfig
         gradle.ext.configureMavenRepositories = gradle.root.ext.configureMavenRepositories
@@ -23,7 +23,7 @@ dependencyResolutionManagement {
     }
     versionCatalogs {
         libs {
-            from(files("../../../../gradle/libs.versions.toml"))
+            from(files(new File(System.getProperty("user.dir"), "gradle/libs.versions.toml")))
         }
     }
 }

@@ -48,7 +48,7 @@ object Config {
     fun readVersionFromFile(project: Project): String {
         var mozconfig = project.gradle.extensions.extraProperties.get("mozconfig") as Map<*, *>;
         var topsrcdir = mozconfig.get("topsrcdir") as String;
-        var versionPath = Paths.get(topsrcdir, "mobile/android/version.txt");
+        var versionPath = Paths.get(topsrcdir, "version.txt");
         return project.file(versionPath).useLines { it.firstOrNull() ?: "" }
     }
 
