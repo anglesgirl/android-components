@@ -127,7 +127,6 @@ class AddonManager(
 
             // Build a list of installed extensions that are not built-in extensions.
             val installedAddons = installedExtensions
-                .filterValues { !it.isBuiltIn() }
                 .map {
                     val extension = it.value
                     val installedState = toInstalledState(extension)
